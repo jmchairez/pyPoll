@@ -29,4 +29,10 @@ with open(votes) as csvfile:
 
         
 
+    all_votes = khan + correy + li + otooley
+    khan_vote_per = round((khan / num_rows)*100,3)
+    correy_vote_per = round((correy / num_rows)*100,3)
+    li_vote_per = round((li / num_rows)*100,3)
+    otooley_vote_per = round((otooley / num_rows)*100,3)
+
    
