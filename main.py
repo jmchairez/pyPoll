@@ -39,3 +39,15 @@ with open(votes) as csvfile:
     popular_winner = max(candidates, key=candidates.get)
 
 
+#Print the final script
+print("Election Results")
+print("-------------------------")
+print(f"Total Votes: {num_rows}")    
+print("-------------------------")
+print(f"Khan: {khan_vote_per}% ({khan})")
+print(f"Correy: {correy_vote_per}% ({correy})")
+print(f"Li: {li_vote_per}% ({li})")
+print(f"O'Tooley: {otooley_vote_per}% ({otooley})")
+print("-------------------------")
+print(f"Winner {popular_winner}")
+print("-------------------------")
