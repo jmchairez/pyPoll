@@ -35,4 +35,7 @@ with open(votes) as csvfile:
     li_vote_per = round((li / num_rows)*100,3)
     otooley_vote_per = round((otooley / num_rows)*100,3)
 
-   
+    candidates = {"Khan": khan, "Correy": correy, "Li": li, "O''Tooley": otooley}
+    popular_winner = max(candidates, key=candidates.get)
+
+
